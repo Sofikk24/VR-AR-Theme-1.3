@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>AR GPS Project</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene
+      vr-mode-ui="enabled: false"
+      embedded
+      arjs="sourceType: debugUIEnabled: false;"
+      <a-entity gps-entity-place="latitude: 56.48252; longitude: 84.96677;">
+        <a-text value="Какой-то текст" scale="50 50 50" color="red"></a-text>
+      </a-entity>      
+    >
+      <!-- Ваш контент будет добавлен здесь -->
+    </a-scene>
+  </body>
+</html>
+
+  
